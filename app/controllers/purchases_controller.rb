@@ -55,7 +55,7 @@ class PurchasesController < ApplicationController
     end
     # Never trust parameters from the scary internet, only allow the white list through.
     def purchase_params
-      params.require(:purchase).permit(:title, :desc, :count)
+      params.require(:purchase).permit(:title)
     end
     protected
     def authenticate
